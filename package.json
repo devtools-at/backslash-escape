@@ -1,0 +1,44 @@
+{
+  "name": "@devtools-at/backslash-escape",
+  "version": "1.0.0",
+  "description": "Escape/unescape backslash sequences",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "backslash-escape",
+    "devtools",
+    "utility",
+    "converter",
+    "encoder",
+    "decoder"
+  ],
+  "author": "DevTools.at",
+  "license": "MIT",
+  "homepage": "https://devtools.at/tools/backslash-escape",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtools-at/backslash-escape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devtools-at/backslash-escape/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
